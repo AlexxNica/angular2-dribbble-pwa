@@ -10,14 +10,13 @@ import { RouteConfig , ROUTER_DIRECTIVES, ROUTER_PROVIDERS} from '@angular/route
   template: `
     <div class="">
       <nav class="navbar navbar-dark navbar-fixed-top bg-primary bg-faded">
-        <div class="collapse navbar-toggleable-xs container" id="navbar-header">
-          <!--a class="navbar-brand" [routerLink]="['/Home']">NG2 Dribbble</a-->
+        <div class="navbar-toggleable-xs container" id="navbar-header">
+          <a class="navbar-brand" [routerLink]="['/Home']">Berry</a>
         </div>
       </nav>
       <router-outlet></router-outlet>
     </div>
   `,
-  styles: [],
   directives: [MdToolbar, APP_SHELL_DIRECTIVES, ROUTER_DIRECTIVES]
 })
 @RouteConfig([
