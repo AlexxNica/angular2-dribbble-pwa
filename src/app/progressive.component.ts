@@ -9,11 +9,12 @@ import { RouteConfig , ROUTER_DIRECTIVES, ROUTER_PROVIDERS} from '@angular/route
   selector: 'progressive-app',
   template: `
     <div class="">
-      <nav class="navbar navbar-dark navbar-fixed-top bg-primary bg-faded">
-        <div class="navbar-toggleable-xs container" id="navbar-header">
-          <a class="navbar-brand" [routerLink]="['/Home']">Berry</a>
-        </div>
-      </nav>
+      <header class="header">
+        <button tabindex="1" class="header__menu">
+          Toggle nav menu
+            </button>
+          <a style="color:white; text-decoration:none" [routerLink]="['/Home']"><h1 class="header__title">Cherry</h1></a>
+      </header>
       <router-outlet></router-outlet>
     </div>
   `,
@@ -25,3 +26,4 @@ import { RouteConfig , ROUTER_DIRECTIVES, ROUTER_PROVIDERS} from '@angular/route
 export class ProgressiveAppComponent {
 
 }
+
