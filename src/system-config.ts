@@ -23,6 +23,7 @@ const barrels: string[] = [
   '@angular/platform-browser-dynamic',
   '@angular2-material/core',
   '@angular2-material/toolbar',
+  '@angular2-material/progress-circle',
   '@angular/router-deprecated',
   '@angular/upgrade',
   '@angular/testing',
@@ -59,6 +60,10 @@ System.config({
         '@angular2-material/toolbar': {
             defaultExtension: 'js',
             main: 'toolbar.js'
+        },
+        '@angular2-material/progress-circle': {
+            defaultExtension: 'js',
+            main: 'progress-circle.js'
         },
         'angular2-in-memory-web-api': {
           defaultExtension: 'js'
