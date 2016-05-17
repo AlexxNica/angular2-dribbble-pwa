@@ -1,16 +1,27 @@
 <div class="album text-muted">
   <div class="container">
     <div class="row">
-      <div class="card" *ngFor=" let post of posts | async">
+      <div class="card md-thumbnail" *ngFor=" let post of posts | async">
         <a [routerLink]="['/Home', 'Post', {id: post.id}]">
         <img src="{{post.images.normal}}" alt="Card image cap" class="img-responsive">
-        <p class="card-text">{{post.title}}</p>
+        <!-- <p class="card-text">{{post.title}}</p> -->
+        <div class="caption">
+          <div class="trophy">
+            <img src="icons/ic_favorite_black_24px.svg"/> {{ post.likes_count || 0 }}
+          </div>
+          <div class="trophy">
+            <img src="icons/ic_visibility_black_24px.svg"/> {{ post.views_count || 0 }}
+          </div>
+          <div class="trophy">
+            <img src="icons/ic_chat_bubble_black_24px.svg"/> {{ post.comments_count || 0 }}
+          </div>
+        </div>
         </a>
       </div>
     </div>
   </div>
   <div class="text-xs-center">
-    <button class="btn btn-primary" (click)="page.next()">
+    <button class="btn-block mdl-button" (click)="page.next()">
       LOAD MORE
     </button>
   </div>
