@@ -1,0 +1,57 @@
+.post-list-item .post__info--preview {
+    position: relative;
+    background: #fff;
+    z-index: 10;
+    -webkit-transition: all 100ms ease;
+    transition: all 100ms ease;
+    border-radius: 0 0 4px 4px;
+    top: 0;
+}
+
+.post-preview__details {
+    position: relative;
+    min-height: 55px;
+}
+
+.clearfix:before, .clearfix:after {
+    content: " ";
+    display: table;
+}
+
+.post-maker {
+    display: inline-block;
+    float: left;
+    margin-right: 10px;
+}
+
+.avatar__wrapper {
+    position: relative;
+    display: block;
+}
+
+.avatar__wrapper .avatar {
+    display: block;
+    border-radius: 50%;
+}
+
+.post-preview__details a {
+    color: rgba(0,0,0,0.87);
+    font-weight: 400;
+}
+
+.post-preview__details h2 {
+    margin: 0;
+    font-size: 15px;
+    line-height: 20px;
+    padding-right: 5px;
+    font-weight: 700;
+    color: rgba(0,0,0,0.87);
+}
+
+.shot_image {
+  width: 100%;
+}
+
+.shot_description {
+  padding: 14px;
+}

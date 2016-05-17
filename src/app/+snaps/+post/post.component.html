@@ -1,16 +1,22 @@
 <div class="container post-component">
   <div class="media shot_header" *ngIf="post">
-    <div class="pull-left">
-      <img class="media-object" src="{{post.user.avatar_url}}" >
-    </div>
+
     <div class="media-body">
       <h1>{{post.title}}</h1>
-      <span class="muted">by</span>
-      <a href="#/players/{{post.user.username}}">
-        {{post.user.name}}
-      </a>
-      |
-      {{post.created_at}}
+      <div class="post__info--preview">
+        <div class="post-preview__details clearfix">
+          <div class="post-maker">
+            <div class="avatar__wrapper avatar__wrapper--36">
+              <img width="36" height="36" class="avatar" src="{{post.user.avatar_url}}">
+            </div>
+          </div>
+          <a href="{{post.user.html_url}}">
+            <h2 class="truncate">
+              {{post.user.name}}
+            </h2>
+          </a>
+        </div>
+      </div>
     </div>
   </div>
 
@@ -18,6 +24,8 @@
     <div class="col-md-9">
       <img class="shot_image" src="{{post.images.hidpi}}">
     </div>
+
+    <div [innerHTML]="post.description" class="shot_description"></div>
 
     <div class="col-md-3" *ngIf="post">
         <ul class="list-group">

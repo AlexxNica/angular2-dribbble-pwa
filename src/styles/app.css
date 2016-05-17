@@ -4,6 +4,10 @@ html {
     box-sizing: border-box;
 }
 
+.album {
+  margin-top: 20px;
+}
+
 body {
     font-family: Roboto,Helvetica,Arial,sans-serif;
     font-size: 14px;
@@ -102,7 +106,6 @@ img {
   width: 31.333%;
   min-width: 190px;
   /*padding: .75rem;*/
-  margin-bottom: 2rem;
   margin-right: 10px;
   border: 0;
   box-shadow: 1px 1px 6px 0 #C6C4C4;

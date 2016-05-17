@@ -14,6 +14,7 @@ md-toolbar[color=primary] {
   margin-top: -70px;
   will-change: transform;
   position: fixed;
+  z-index: 5;
   box-shadow: 0 4px 5px 0 rgba(0,0,0,.14),0 2px 9px 1px rgba(0,0,0,.12),0 4px 2px -2px rgba(0,0,0,.2);
 }
 
@@ -26,9 +27,7 @@ md-progress-circle[mode="indeterminate"] {
   height: 64px;
   margin: 0 8px;
 }
-md-progress-circle[mode="indeterminate"] /deep/ circle {
-  stroke: white !important;
-}
+
 .indicator-container {
   height: 0;
   margin-top: 50%;
